@@ -23,6 +23,7 @@ public class MyTestcontroller {
 	public List<Users> testUsers(String phoneNumber) {
 		log.info("进入方法：testUsers");
 		List<Users> list = myTestService.getUsers(phoneNumber);
+		System.err.println("测试");
 		return list;
 	}
 }
